@@ -7,6 +7,15 @@
 /* Footer */
 
 	#footer {
+		position: relative;
+		z-index: 1;
+		
+		// Prevent footer from moving when modal is active
+		body.modal-active & {
+			position: relative;
+			z-index: 1;
+		}
+		
 		.presentify {
 			margin: 0 0 1.4em 0;
 			display: flex;
